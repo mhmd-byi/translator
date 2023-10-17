@@ -19,7 +19,9 @@ export default function RootLayout({
     <html lang="en" className='h-full bg-gray-50'>
       <body className={`${inter.className} h-full`}>
         <Header />
-        {children}
+        <div className="flex flex-col justify-center py-12 mx-auto max-w-7xl p-6 lg:px-8">
+          {children}
+        </div>
       </body>
     </html>
   )
