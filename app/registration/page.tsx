@@ -5,10 +5,10 @@ export default function Registration() {
         <div className="flex flex-col md:flex-row gap-x-8 gap-y-8">
           <div className="px-4 sm:px-0 w-1/3">
             <h2 className="text-base font-semibold leading-7 text-gray-900">
-              Personal Information
+              Writer's Personal Information
             </h2>
             <p className="mt-1 text-sm leading-6 text-gray-600">
-              Use a permanent address where you can receive mail.
+              Use a correct Email address for receiving e-mail.
             </p>
           </div>
 
@@ -18,16 +18,16 @@ export default function Registration() {
                 <div className="flex flex-row w-full gap-x-6">
                   <div className="w-full">
                     <label
-                      htmlFor="first-name"
+                      htmlFor="name"
                       className="block text-sm font-medium leading-6 text-gray-900"
                     >
-                      First name
+                      Name
                     </label>
                     <div className="mt-2">
                       <input
                         type="text"
-                        name="first-name"
-                        id="first-name"
+                        name="name"
+                        id="name"
                         autoComplete="given-name"
                         className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                       />
@@ -36,16 +36,16 @@ export default function Registration() {
 
                   <div className="w-full">
                     <label
-                      htmlFor="last-name"
+                      htmlFor="its"
                       className="block text-sm font-medium leading-6 text-gray-900"
                     >
-                      Last name
+                      ITS 
                     </label>
                     <div className="mt-2">
                       <input
                         type="text"
-                        name="last-name"
-                        id="last-name"
+                        name="its-number"
+                        id="its-number"
                         autoComplete="family-name"
                         className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                       />
@@ -95,91 +95,19 @@ export default function Registration() {
                     htmlFor="country"
                     className="block text-sm font-medium leading-6 text-gray-900"
                   >
-                    Country
+                    Role
                   </label>
                   <div className="mt-2">
                     <select
-                      id="country"
-                      name="country"
-                      autoComplete="country-name"
+                      id="role"
+                      name="role"
+                      autoComplete="role"
                       className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
                     >
-                      <option>United States</option>
-                      <option>Canada</option>
-                      <option>Mexico</option>
+                      <option>Select</option>
+                      <option>Writer</option>
+                      <option>Glossary Writer</option>
                     </select>
-                  </div>
-                </div>
-
-                <div className="col-span-full">
-                  <label
-                    htmlFor="street-address"
-                    className="block text-sm font-medium leading-6 text-gray-900"
-                  >
-                    Street address
-                  </label>
-                  <div className="mt-2">
-                    <input
-                      type="text"
-                      name="street-address"
-                      id="street-address"
-                      autoComplete="street-address"
-                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    />
-                  </div>
-                </div>
-
-                <div className="sm:col-span-2 sm:col-start-1">
-                  <label
-                    htmlFor="city"
-                    className="block text-sm font-medium leading-6 text-gray-900"
-                  >
-                    City
-                  </label>
-                  <div className="mt-2">
-                    <input
-                      type="text"
-                      name="city"
-                      id="city"
-                      autoComplete="address-level2"
-                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    />
-                  </div>
-                </div>
-
-                <div className="sm:col-span-2">
-                  <label
-                    htmlFor="region"
-                    className="block text-sm font-medium leading-6 text-gray-900"
-                  >
-                    State / Province
-                  </label>
-                  <div className="mt-2">
-                    <input
-                      type="text"
-                      name="region"
-                      id="region"
-                      autoComplete="address-level1"
-                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    />
-                  </div>
-                </div>
-
-                <div className="sm:col-span-2">
-                  <label
-                    htmlFor="postal-code"
-                    className="block text-sm font-medium leading-6 text-gray-900"
-                  >
-                    ZIP / Postal code
-                  </label>
-                  <div className="mt-2">
-                    <input
-                      type="text"
-                      name="postal-code"
-                      id="postal-code"
-                      autoComplete="postal-code"
-                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    />
                   </div>
                 </div>
               </div>
