@@ -12,22 +12,29 @@ function classNames(...classes: any) {
 
 export default function WriterScreen() {
   return (
-    <div className="flex flex-col justify-center py-12 mx-auto max-w-7xl p-6 lg:px-8">
-        <div className="bg-white py-10 sm:py-10">
-  <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-0 lg:px-0y xl:grid-cols-3">
-    <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
-      <li>
-        <div className="flex items-center gap-x-6">
-          {/* <img className="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""> */}
-          <div>
-            <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">Abbas Badshah</h3>
-            <p className="text-sm font-semibold leading-6 text-indigo-600">30406688</p>
-          </div>
+    <div>
+      <div className="py-10 sm:py-10">
+        <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-0 lg:px-0y xl:grid-cols-3">
+          <ul
+            role="list"
+            className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
+          >
+            <li>
+              <div className="flex items-center gap-x-6">
+                {/* <img className="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""> */}
+                <div>
+                  <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                    Abbas Badshah
+                  </h3>
+                  <p className="text-sm font-semibold leading-6 text-indigo-600">
+                    30406688
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
-      </li>
-    </ul>
-  </div>
-</div>
+      </div>
       <form action="#">
         <Tab.Group>
           {({ selectedIndex }) => (
@@ -101,7 +108,7 @@ export default function WriterScreen() {
                   </label>
                   <div>
                     <textarea
-                      rows={30}
+                      rows={20}
                       name="comment"
                       id="comment"
                       className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
